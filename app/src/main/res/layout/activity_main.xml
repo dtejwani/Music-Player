@@ -1,60 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="MUSIC PLAYER"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:layout_margin="16dp"/>
 
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="97dp"
-        android:layout_marginRight="97dp"
-        android:layout_marginBottom="354dp"
-        android:src="@drawable/beauty"
-
-        />
-
-    <Button
-        android:id="@+id/btn_play"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="150dp"
-        android:layout_marginRight="150dp"
-        android:layout_marginBottom="188dp"
-        android:background="@drawable/play" />
-
-    <Button
-        android:id="@+id/btn_stop"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="321dp"
-        android:layout_marginRight="321dp"
-        android:layout_marginBottom="214dp"
-        android:background="@drawable/stop" />
-
-    <Button
-        android:id="@+id/btn_pause"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="210dp"
-        android:background="@drawable/pause"    />
-
-
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prayer"
+        android:textSize="16sp"
+        android:id="@+id/song1"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Me Myself and I"
+          android:textSize="16sp"
+          android:id="@+id/song2"
+          android:layout_marginTop="16dp"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Natural"
+          android:textSize="16sp"
+          android:layout_marginTop="16dp"
+          android:id="@+id/song3"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Human"
+          android:textSize="16sp"
+          android:layout_marginTop="16dp"
+          android:id="@+id/song4"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="La La La La"
+          android:textSize="16sp"
+          android:id="@+id/song5"
+          android:layout_marginTop="16dp"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Growing Pains"
+          android:textSize="16sp"
+          android:id="@+id/song6"
+          android:layout_marginTop="16dp"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Bad Guy"
+          android:textSize="16sp"
+          android:id="@+id/song7"
+          android:layout_marginTop="16dp"
+          android:padding="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="16dp"
+          android:background="@color/colorPrimary"
+          android:padding="16dp"
+          android:textSize="16sp"
+          android:id="@+id/bestsong"
+          android:textColor="@color/colorAccent"
+          android:text="Best songs"/>
+  </LinearLayout>
